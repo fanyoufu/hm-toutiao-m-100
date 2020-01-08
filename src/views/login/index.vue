@@ -29,7 +29,8 @@
 </template>
 
 <script>
-import { login } from '@/api/user'
+import { login, getInfo } from '@/api/user'
+import { mapMutations } from 'vuex'
 export default {
   name: '',
   data () {
@@ -41,6 +42,7 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['setUser']),
     async hLogin () {
       // 对用户的信息进行校验
       // todo: 更加完备验证
@@ -63,7 +65,14 @@ export default {
 
         // 根据返回结果做后续的处理
         console.log(result.data)
+        // token信息保存在 result.data.data中。
+        // 把token保存到vuex中
+        this.setUser(result.data.data)
+
         this.$toast.success('登陆成功')
+        // 去获取用户信息
+        const info = await getInfo()
+        console.log(info)
       } catch (err) {
         if (err && err.response && err.response.status === 400) {
           this.$toast.fail('登陆失败')

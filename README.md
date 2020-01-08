@@ -1,5 +1,8 @@
 # hm-toutiao-m-100
 这是一个nb的项目
+## 分支说明
+- 1vant: 引入了vant组件
+
 ## Project setup
 ```
 npm install

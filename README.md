@@ -3,6 +3,7 @@
 ## 分支说明
 - master: 初始化
 - 1vant: 引入了vant组件
+- 2axios:对请求进行封装
 
 ## Project setup
 ```

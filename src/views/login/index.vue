@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import request from '@/utils/request'
+import { login } from '@/api/user'
 export default {
   name: '',
   data () {
@@ -58,11 +58,8 @@ export default {
         })
 
         // 发请求
-        const result = await request({
-          url: '/app/v1_0/authorizations',
-          method: 'post',
-          data: this.user
-        })
+        // 用户登陆
+        const result = await login(this.user)
 
         // 根据返回结果做后续的处理
         console.log(result.data)

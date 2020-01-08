@@ -4,6 +4,7 @@
 - master: 初始化
 - 1vant: 引入了vant组件
 - 2axios:对请求进行封装
+- 3login: 实现了login功能 及api代码封装
 
 ## Project setup
 ```

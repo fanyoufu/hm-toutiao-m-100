@@ -10,14 +10,17 @@ import 'vant/lib/index.css'
 
 import '@/styles/index.less'
 
+// import Button from 'vant/lib/button'
 // 手动按需引入组件
-import { Button, NavBar, Field, Cell, CellGroup } from 'vant'
+// import { Button, NavBar, Field, Cell, CellGroup } from 'vant'
+import vant from 'vant'
+// import { Button } from 'vant'
 // 注册组件
-Vue.use(Button)
-  .use(NavBar)
-  .use(Field)
-  .use(Cell)
-  .use(CellGroup)
+Vue.use(vant)
+// .use(NavBar)
+// .use(Field)
+// .use(Cell)
+// .use(CellGroup)
 
 Vue.config.productionTip = false
 

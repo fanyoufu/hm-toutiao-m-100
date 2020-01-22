@@ -1,12 +1,12 @@
 <template>
   <div>
-    文章
+    userChat
   </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'userChat',
   data () {
     return {
 

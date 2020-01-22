@@ -12,55 +12,58 @@ const routes = [
   },
   {
     path: '/',
-    name: 'home',
     component: Layout,
     children: [
       {
         path: '/',
-        name: 'index',
-        component: () => import('../views/home')
+        component: () => import('@/views/home')
       },
       {
         path: '/question',
         name: 'question',
-        component: () => import('../views/question')
+        component: () => import('@/views/question')
       },
       {
         path: '/video',
         name: 'video',
-        component: () => import('../views/video')
+        component: () => import('@/views/video')
       },
       {
-        path: '/',
+        path: '/user',
         name: 'user',
-        component: () => import('../views/user')
+        component: () => import('@/views/user')
       }
     ]
   },
   {
     path: '/user/profile',
     name: 'profile',
-    component: () => import('../views/userProfile')
+    component: () => import('@/views/user/userProfile')
   },
   {
     path: '/user/chat',
     name: 'chat',
-    component: () => import('../views/userChat')
+    component: () => import('@/views/user/userChat')
   },
   {
     path: '/search',
     name: 'search',
-    component: () => import('../views/search')
+    component: () => import('@/views/search')
   },
   {
     path: '/search/result',
     name: 'searchResult',
-    component: () => import('../views/searchResult')
+    component: () => import('@/views/searchResult')
   },
   {
     path: '/article',
     name: 'article',
-    component: () => import('../views/article')
+    component: () => import('@/views/article')
+  },
+  {
+    path: '*',
+    name: '404',
+    component: () => import('@/views/404')
   }
   // {
   //   path: '/about',

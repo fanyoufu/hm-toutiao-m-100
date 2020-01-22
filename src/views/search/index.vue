@@ -1,6 +1,6 @@
 <template>
   <div>
-    文章
+    搜索
   </div>
 </template>
 

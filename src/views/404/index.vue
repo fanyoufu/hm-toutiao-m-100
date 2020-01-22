@@ -1,12 +1,12 @@
 <template>
   <div>
-    文章
+    404
   </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'page404',
   data () {
     return {
 
@@ -14,7 +14,3 @@ export default {
   }
 }
 </script>
-
-<style lang="" scoped>
-
-</style>
